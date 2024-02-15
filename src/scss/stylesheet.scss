@@ -1,0 +1,82 @@
+
+/*** variables ***/
+$main-font:'Josefin Sans', sans-serif;
+$main-colour: #111111;
+$footer-link-colour: #989898;
+$content-spacing: 50px;
+$bold: 900;
+
+@mixin link-styling ($linkcolor:$main-colour){
+    font-weight: 400;
+    text-decoration: none;
+    color: $linkcolor;
+    transition: .20s;
+}
+
+@mixin heading ($heading-size: 37px){
+    font-size: $heading-size;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family: $main-font;
+    font-weight: 400;
+    line-height: 1.3em;
+    word-wrap: break-word;
+    color: $main-colour; 
+}
+
+body {
+    font-family: Quando;
+    font-size: 15px;
+    color: #787878;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+  }
+p {
+    margin-bottom: 25px;
+    line-height: 1.6em;
+  }
+a:hover {
+    color: #999999;
+  }
+
+h1 {
+    @include heading;
+  }
+h2 {
+    @include heading ($heading-size: 31px);
+  }
+h3 {
+    @include heading ($heading-size: 26px);
+  }
+h4 {
+    @include heading ($heading-size: 21px);
+  }
+h5 {
+    @include heading ($heading-size: 18px);
+  }
+h6 {
+    @include heading ($heading-size: 15px);
+  }
+  
+  
+.container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  
+  
+  /* header and main nav */
+header {
+        font-family: $main-font;
+
+        ul { display: none; }
+    
+        .top-logo {
+        width: 200px;
+        margin: 20px auto 40px;
+        }
+    }
+  
+  
