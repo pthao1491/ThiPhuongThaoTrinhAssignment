@@ -1,11 +1,11 @@
-
-/*** variables ***/
+/*** the variables ***/
 $main-font:'Josefin Sans', sans-serif;
 $main-colour: #111111;
 $footer-link-colour: #989898;
 $content-spacing: 50px;
 $bold: 900;
 
+/*mixin*/
 @mixin link-styling ($linkcolor:$main-colour){
     font-weight: 400;
     text-decoration: none;
@@ -103,8 +103,6 @@ header {
     a:hover { color: #35c4ce;}
 }
 
-
-
 /* footer */
 footer {
     padding: 30px 0;
@@ -192,7 +190,7 @@ header {
     .current-menu-item a { border-bottom: 2px solid #324360; }
 }
 
-/* sub nav */
+/* the nav */
 header nav ul ul {
     visibility: hidden;
     opacity: 0;
